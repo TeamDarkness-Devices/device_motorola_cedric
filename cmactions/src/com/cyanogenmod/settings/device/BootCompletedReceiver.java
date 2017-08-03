@@ -26,8 +26,6 @@ import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.util.Log;
 
-import cyanogenmod.providers.CMSettings;
-
 import com.cyanogenmod.settings.device.ServiceWrapper.LocalBinder;
 
 public class BootCompletedReceiver extends BroadcastReceiver {

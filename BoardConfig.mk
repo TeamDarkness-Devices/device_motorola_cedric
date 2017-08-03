@@ -21,6 +21,7 @@ LOCAL_PATH := device/motorola/cedric
 BOARD_VENDOR := motorola-qcom
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+TARGET_TC_ROM := 4.9-ubertc
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
