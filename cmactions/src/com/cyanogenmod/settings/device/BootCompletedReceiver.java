@@ -42,19 +42,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
              Constants.writePreference(context, pref);
         }
 
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-
-        if (!preferences.getBoolean(NAVBAR_SHOWN, false)) {
-            enableNaviBar(true, context);
-            preferences.edit().putBoolean(NAVBAR_SHOWN, true).commit(); 
-        }
-
         context.startService(new Intent(context, ServiceWrapper.class));
-    }
 
-    protected static void enableNaviBar(boolean enable, Context context) {
-        CMSettings.Global.putInt(context.getContentResolver(),
-                CMSettings.Global.DEV_FORCE_SHOW_NAVBAR, enable ? 1 : 0);
     }
 
     private ServiceConnection serviceConnection = new ServiceConnection() {
