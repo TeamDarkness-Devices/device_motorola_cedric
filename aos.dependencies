@@ -13,5 +13,10 @@
     "repository": "Wzedlare/android_vendor_motorola_cedric",
     "target_path": "vendor/motorola/cedric",
     "branch":      "cm-14.1"
+  },
+  {
+    "repository": "boulzordev/android_kernel_motorola_msm8953",
+    "target_path": "kernel/motorola/msm8953",
+    "branch":     "cm-14.1"
   }
 ]
